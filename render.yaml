@@ -1,1 +1,6 @@
-
+services:
+  - type: worker
+    name: kino-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
